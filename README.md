@@ -1,4 +1,5 @@
 # FILM! на PostgreSQL
+Версия на MongoDB - https://github.com/MrKarlLogan/film-react-nest
 
 ## Установка
 
