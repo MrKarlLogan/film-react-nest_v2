@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { FilmsService } from 'src/films/films.service';
+import { FilmsService } from '../films/films.service';
 import { PostOrderTicketDTO } from './dto/order.dto';
-import { PostFilmDTO } from 'src/films/dto/films.dto';
+import { PostFilmDTO } from '../films/dto/films.dto';
 
 @Injectable()
 export class OrderService {
