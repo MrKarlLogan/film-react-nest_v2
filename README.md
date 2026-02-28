@@ -1,12 +1,11 @@
-# FILM!
+# FILM! на PostgreSQL
+Версия на MongoDB - https://github.com/MrKarlLogan/film-react-nest
 
 ## Установка
 
-### MongoDB
+### PostgreSQL
 
-Установите MongoDB скачав дистрибутив с официального сайта или с помощью пакетного менеджера вашей ОС. Также можно воспользоваться Docker (см. ветку `feat/docker`.
-
-Выполните скрипт `test/mongodb_initial_stub.js` в консоли `mongo`.
+Установите PostgreSQL скачав дистрибутив с официального сайта или с помощью пакетного менеджера вашей ОС.
 
 ### Бэкенд
 
@@ -18,16 +17,11 @@
 
 `npm ci` или `yarn install --frozen-lockfile`
 
-Создайте `.env` файл из примера `.env.example`, в нём укажите:
-
-* `DATABASE_DRIVER` - тип драйвера СУБД - в нашем случае это `mongodb` 
-* `DATABASE_URL` - адрес СУБД MongoDB, например `mongodb://127.0.0.1:27017/practicum`.  
-
-MongoDB должна быть установлена и запущена.
+PostgreSQL должна быть установлена и запущена.
 
 Запустите бэкенд:
 
-`npm start:debug`
+`npm run start:dev`
 
 Для проверки отправьте тестовый запрос с помощью Postman или `curl`.
 
