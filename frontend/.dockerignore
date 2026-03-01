@@ -1,0 +1,6 @@
+.storybook
+.template
+dist
+node_modules
+*.logs
+.env

@@ -21,7 +21,7 @@ async function bootstrap() {
     }),
   );
 
-  const loggerType = process.env.LOGGER_TYPE || 'tskv';
+  const loggerType = process.env.LOGGER_TYPE ?? 'tskv';
 
   switch (loggerType) {
     case 'dev':
@@ -37,6 +37,6 @@ async function bootstrap() {
       app.useLogger(new DevLogger());
   }
 
-  await app.listen(3000);
+  await app.listen(process.env.PORT ?? 3000);
 }
 bootstrap();
